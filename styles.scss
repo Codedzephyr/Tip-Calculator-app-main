@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+/*Defining standard variables and values for project */
+$fontsize: 18px;
+$primarycyan: hsl(172, 67%, 45%);
+$Verydarkcyan: hsl(183, 100%, 15%);
+$Darkgrayishcyan: hsl(186, 14%, 43%);
+$Darkgrayishcyan1: hsl(184, 14%, 56%);
+$Lightgrayishcyan: hsl(185, 41%, 84%);
+$Lightgrayishcyan1: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+$fontsize: 24px;
+$fontweight: 400;
+$fontweight1: 500;
+$fontweight2: 700;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  max-width: 100%;
+  background-color: $Lightgrayishcyan;
+  font-family: "Space Mono", monospace;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 12.8px);
+}
+
+.calculator-container {
+  min-width: 60%;
+  min-height: calc(50vh - 12.8px);
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(19vh - 12.8px);
+  }
+
+  .content-container {
+    min-height: calc(40vh - 12.8px);
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+
+    .calculation-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .calculation {
+        width: 85%;
+        min-height: calc(40vh - 12.8px);
+        margin: 10px;
+
+        #calculation-form {
+          margin: 15px;
+          min-height: calc(35vh - 12.8px);
+
+          #bill {
+            color: $Darkgrayishcyan;
+            font-family: Space Mono;
+            margin-bottom: 20px;
+          }
+
+          .form-container {
+            width: 100%;
+            display: flex;
+            position: relative;
+
+            .person {
+              position: absolute;
+              left: 14px;
+              top: 20px;
+            }
+
+            #bill-input {
+              width: 100%;
+              padding: 5px 10px;
+              text-align: right;
+              margin: 10px 0px;
+              font-weight: $fontweight2;
+              font-family: "Space Mono", monospace;
+              display: inline-block;
+              color: $Verydarkcyan;
+              border: 2px solid $primarycyan !important;
+              border-radius: 4px;
+              box-sizing: border-box;
+              font-size: 24px;
+              outline: none;
+            }
+
+            #bill-input:focus {
+              background-color: $Lightgrayishcyan;
+            }
+          }
+
+          .display {
+            color: red;
+            display: none;
+          }
+
+          .select-tip-container {
+            margin: 25px 0px 20px 0px;
+
+            #tip {
+              margin-bottom: 20px;
+              color: $Darkgrayishcyan;
+              font-family: Space Mono;
+            }
+
+            .button-container {
+              display: flex;
+              flex-wrap: wrap;
+              margin-top: 10px;
+              gap: 20px;
+
+              .button-five {
+                background-color: $Verydarkcyan;
+                border: none;
+                color: $White;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                padding: 5px;
+                font-family: "Space Mono", monospace;
+                flex: 1 0 100px;
+                height: 40px;
+                cursor: pointer;
+                border-radius: 4px;
+              }
+              .button-five:hover {
+                background-color: $primarycyan;
+              }
+
+              .button-ten {
+                background-color: $Verydarkcyan;
+                border: none;
+                color: $White;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-family: "Space Mono", monospace;
+                font-size: 16px;
+                padding: 5px;
+                flex: 1 0 100px;
+                height: 40px;
+                cursor: pointer;
+                border-radius: 4px;
+              }
+
+              .button-ten:hover {
+                background-color: $primarycyan;
+              }
+
+              .button-fifteen {
+                background-color: $Verydarkcyan;
+                border: none;
+                color: $White;
+                text-align: center;
+                font-family: "Space Mono", monospace;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                padding: 5px;
+                flex: 1 0 100px;
+                height: 40px;
+                cursor: pointer;
+                border-radius: 4px;
+              }
+
+              .button-fifteen:hover {
+                background-color: $primarycyan;
+              }
+
+              .button-twenty-five {
+                background-color: $Verydarkcyan;
+                border: none;
+                color: $White;
+                text-align: center;
+                text-decoration: none;
+                font-family: "Space Mono", monospace;
+                display: inline-block;
+                font-size: 16px;
+                padding: 5px;
+                flex: 1 0 100px;
+                height: 40px;
+                cursor: pointer;
+                border-radius: 4px;
+              }
+
+              .button-twenty-five:hover {
+                background-color: $primarycyan;
+              }
+              .button-fifty {
+                background-color: $Verydarkcyan;
+                border: none;
+                color: $White;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                padding: 5px;
+                font-family: "Space Mono", monospace;
+                flex: 1 0 100px;
+                height: 40px;
+                cursor: pointer;
+                border-radius: 4px;
+              }
+
+              .button-fifty:hover {
+                background-color: $primarycyan;
+              }
+
+              .custom {
+                height: 42px;
+                padding: 10px 10px;
+                border-radius: 4px;
+                display: inline-block;
+                border: 2px solid $primarycyan !important;
+                box-sizing: border-box;
+                outline: none;
+                color: $Verydarkcyan;
+                font-size: 24px;
+                font-weight: $fontweight2;
+                font-family: "Space Mono", monospace;
+                width: 100px;
+                flex-grow: 1;
+                font-size: 20px;
+                flex-shrink: 0;
+              }
+
+              .custom:focus {
+                background-color: $Lightgrayishcyan;
+              }
+            }
+          }
+
+          .people-container {
+            margin: 30px 0px 20px 0px;
+
+            .label-container {
+              display: flex;
+              margin-bottom: -10px;
+              #people {
+                width: 100%;
+                margin-bottom: 20px;
+                color: $Darkgrayishcyan;
+                font-family: Space Mono;
+              }
+
+              .display1 {
+                display: none;
+                text-align: right;
+                width: 100%;
+                color: red;
+              }
+            }
+
+            .form-container {
+              width: 100%;
+              display: flex;
+              position: relative;
+
+              .person {
+                position: absolute;
+                left: 14px;
+                top: 12px;
+              }
+
+              #people-input {
+                width: 100%;
+                padding: 5px 10px;
+                margin: 0px 0px;
+                font-size: 24px;
+                font-weight: $fontweight2;
+                font-family: "Space Mono", monospace;
+                text-align: right;
+                display: inline-block;
+                border: 2px solid $primarycyan !important;
+                border-radius: 4px;
+                box-sizing: border-box;
+                outline: none;
+              }
+
+              #people-input:focus {
+                background-color: $Lightgrayishcyan;
+              }
+            }
+          }
+
+          .display2 {
+            color: red;
+            display: none;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    .result-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .result {
+        width: 85%;
+        min-height: calc(55vh - 12.8px);
+        background-color: $Verydarkcyan;
+        border-radius: 30px;
+        margin: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .mini-result {
+          width: 80%;
+          min-height: calc(45vh - 12.8px);
+
+          .first-content {
+            display: flex;
+            margin-bottom: 50px;
+
+            .content1 {
+              width: 100%;
+
+              .paragraph {
+                color: $White;
+                margin-top: 10px;
+              }
+
+              .paragraph1 {
+                color: $Darkgrayishcyan;
+              }
+            }
+
+            .answer1 {
+              width: 100%;
+            }
+
+            #amount {
+              width: 100%;
+              padding: 12px 10px;
+              display: inline-block;
+              background-color: $Verydarkcyan;
+              border: 2px solid transparent;
+              border-radius: 4px;
+              text-align: right;
+              font-size: 24px;
+              color: $primarycyan;
+              font-weight: $fontweight2;
+              font-family: "Space Mono", monospace;
+              box-sizing: border-box;
+              outline: none;
+            }
+          }
+
+          .second-content {
+            display: flex;
+
+            .content1 {
+              width: 100%;
+
+              .paragraph {
+                color: $White;
+                margin-top: 10px;
+              }
+
+              .paragraph1 {
+                color: $Darkgrayishcyan;
+              }
+            }
+
+            .answer1 {
+              width: 100%;
+            }
+
+            #total {
+              width: 80%;
+              padding: 12px 10px;
+              display: inline-block;
+              background-color: $Verydarkcyan;
+              border: 2px solid transparent;
+              border-radius: 4px;
+              font-size: 24px;
+              color: $primarycyan;
+              font-weight: $fontweight2;
+              font-family: "Space Mono", monospace;
+              box-sizing: border-box;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  main {
+    margin-bottom: 30px;
+  }
+
+  .heading {
+    margin-top: 30px;
+  }
+
+  .result {
+    gap: 20px;
+  }
+
+  .mini-button-container {
+    width: 40%;
+  }
+}

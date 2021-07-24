@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Space+Mono"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <!--opening tag for body-->
+  <body>
+    <!--opening tag for main-->
+    <main>
+      <!--opening tag for calculator-container-->
+      <div class="calculator-container">
+        <!--opening tag for heading container-->
+        <div class="image-container">
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <!--opening tag for heading container-->
+        <!--opening tag for content container-->
+        <div class="content-container">
+          <!--opening tag for calculation container-->
+          <div class="calculation-container">
+            <!--opening tag for calculation-->
+            <div class="calculation">
+              <!--opening tag for form-->
+              <form id="calculation-form">
+                <label for="Bill" id="bill">Bill</label>
+                <!--opening tag for input container-->
+                <div class="form-container">
+                  <div class="image-container1">
+                    <img src="./images/icon-dollar.svg" alt="" class="person" />
+                  </div>
+                  <input type="text" id="bill-input" name="bill" />
+                </div>
+                <p class="display" id="displayed">Please Input a Value</p>
+                <!--closing tag for input container-->
+
+                <div class="select-tip-container">
+                  <label for="Bill" id="tip"> Select Tip %</label>
+                  <!--opening tag for buttons container-->
+                  <div class="button-container">
+                    <button
+                      type="button"
+                      class="button-five"
+                      value="0.05"
+                      id="button-five"
+                      onclick="getValue()"
+                    >
+                      5%
+                    </button>
+                    <button
+                      class="button-ten"
+                      value="0.1"
+                      type="button"
+                      id="button-ten"
+                      onclick="getValue1()"
+                    >
+                      10%
+                    </button>
+                    <button
+                      class="button-fifteen"
+                      type="button"
+                      value="0.15"
+                      id="button-fifteen"
+                      onclick="getValue2()"
+                    >
+                      15%
+                    </button>
+                    <button
+                      class="button-twenty-five"
+                      type="button"
+                      value="0.25"
+                      id="button-twenty-five"
+                      onclick="getValue3()"
+                    >
+                      25%
+                    </button>
+                    <button
+                      type="button"
+                      value="0.5"
+                      class="button-fifty"
+                      id="button-fifty"
+                      onclick="getValue4()"
+                    >
+                      50%
+                    </button>
+                    <input
+                      type="text"
+                      class="custom"
+                      placeholder="Custom"
+                      id="custom"
+                    />
+                  </div>
+                </div>
+
+                <div class="people-container">
+                  <div class="label-container">
+                    <label for="Bill" id="people"> Number of People</label>
+                    <p class="display1" id="InputATip">Can't be Zero</p>
+                  </div>
+                  <div class="form-container">
+                    <div class="image-container1">
+                      <img
+                        src="./images/icon-person.svg"
+                        alt="person"
+                        class="person"
+                      />
+                    </div>
+                    <input type="text" id="people-input" name="bill" />
+                  </div>
+                  <p class="display2" id="input-value">Please Input A Value</p>
+                </div>
+              </form>
+              <!--closing tag for form-->
+            </div>
+            <!--closing tag for calculation-->
+          </div>
+          <!--closing tag for calculation container-->
+          <!--opening tag for result container-->
+          <div class="result-container">
+            <!---opening tag for result-->
+            <div class="result">
+              <!--opening tag for mini result container-->
+              <div class="mini-result">
+                <!--opening tag for first-content container-->
+                <div class="first-content">
+                  <!--opening tag for content1 container-->
+                  <div class="content1">
+                    <p class="paragraph">Tip Amount</p>
+                    <p class="paragraph1">/ person</p>
+                  </div>
+                  <!--closing tag for content1 container-->
+                  <!--opening tag for answer container-->
+                  <div class="answer1">
+                    <input type="text" id="amount" name="bill" disabled />
+                  </div>
+                  <!--closing tag for answer container-->
+                </div>
+                <!---closing tag for first-content container-->
+
+                <!--opening tag for second-content container-->
+                <div class="second-content">
+                  <!--opening tag for content1 container-->
+                  <div class="content1">
+                    <p class="paragraph">Total Amount</p>
+                    <p class="paragraph1">/ person</p>
+                  </div>
+                  <!--closing tag for content1 container-->
+                  <!--opening tag for answer container-->
+                  <div class="answer1">
+                    <input type="text" id="total" name="bill" disabled />
+                  </div>
+                  <!--closing tag for answer container-->
+                </div>
+                <!---closing tag for second-content container-->
+              </div>
+              <!--closing tag for mini-result container-->
+            </div>
+            <!--closing tag for result-->
+          </div>
+          <!--closing tag for result container-->
+        </div>
+        <!--closing tag for content container-->
+      </div>
+      <!--closing tag for calculator container-->
+    </main>
+    <!--closing tag for main-->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

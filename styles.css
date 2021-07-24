@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+/*Defining standard variables and values for project */
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  max-width: 100%;
+  background-color: #c5e4e7;
+  font-family: "Space Mono", monospace;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: calc(100vh - 12.8px);
+}
+
+.calculator-container {
+  min-width: 60%;
+  min-height: calc(50vh - 12.8px);
+}
+
+.calculator-container .image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: calc(19vh - 12.8px);
+}
+
+.calculator-container .content-container {
+  min-height: calc(40vh - 12.8px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.calculator-container .content-container .calculation-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculator-container .content-container .calculation-container .calculation {
+  width: 85%;
+  min-height: calc(40vh - 12.8px);
+  margin: 10px;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form {
+  margin: 15px;
+  min-height: calc(35vh - 12.8px);
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form #bill {
+  color: #5e7a7d;
+  font-family: Space Mono;
+  margin-bottom: 20px;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .form-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .form-container .person {
+  position: absolute;
+  left: 14px;
+  top: 20px;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .form-container #bill-input {
+  width: 100%;
+  padding: 5px 10px;
+  text-align: right;
+  margin: 10px 0px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  display: inline-block;
+  color: #00494d;
+  border: 2px solid #26c0ab !important;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 24px;
+  outline: none;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .form-container #bill-input:focus {
+  background-color: #c5e4e7;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .display {
+  color: red;
+  display: none;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container {
+  margin: 25px 0px 20px 0px;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container #tip {
+  margin-bottom: 20px;
+  color: #5e7a7d;
+  font-family: Space Mono;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .button-five {
+  background-color: #00494d;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px;
+  font-family: "Space Mono", monospace;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .button-five:hover {
+  background-color: #26c0ab;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .button-ten {
+  background-color: #00494d;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  padding: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .button-ten:hover {
+  background-color: #26c0ab;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .button-fifteen {
+  background-color: #00494d;
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .button-fifteen:hover {
+  background-color: #26c0ab;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .button-twenty-five {
+  background-color: #00494d;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Space Mono", monospace;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .button-twenty-five:hover {
+  background-color: #26c0ab;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .button-fifty {
+  background-color: #00494d;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px;
+  font-family: "Space Mono", monospace;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .button-fifty:hover {
+  background-color: #26c0ab;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .custom {
+  height: 42px;
+  padding: 10px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  border: 2px solid #26c0ab !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  color: #00494d;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  width: 100px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .custom:focus {
+  background-color: #c5e4e7;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .people-container {
+  margin: 30px 0px 20px 0px;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .people-container .label-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: -10px;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .people-container .label-container #people {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #5e7a7d;
+  font-family: Space Mono;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .people-container .label-container .display1 {
+  display: none;
+  text-align: right;
+  width: 100%;
+  color: red;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .people-container .form-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .people-container .form-container .person {
+  position: absolute;
+  left: 14px;
+  top: 12px;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .people-container .form-container #people-input {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 0px 0px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  text-align: right;
+  display: inline-block;
+  border: 2px solid #26c0ab !important;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .people-container .form-container #people-input:focus {
+  background-color: #c5e4e7;
+}
+
+.calculator-container .content-container .calculation-container .calculation #calculation-form .display2 {
+  color: red;
+  display: none;
+  margin-top: 10px;
+}
+
+.calculator-container .content-container .result-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculator-container .content-container .result-container .result {
+  width: 85%;
+  min-height: calc(55vh - 12.8px);
+  background-color: #00494d;
+  border-radius: 30px;
+  margin: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculator-container .content-container .result-container .result .mini-result {
+  width: 80%;
+  min-height: calc(45vh - 12.8px);
+}
+
+.calculator-container .content-container .result-container .result .mini-result .first-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.calculator-container .content-container .result-container .result .mini-result .first-content .content1 {
+  width: 100%;
+}
+
+.calculator-container .content-container .result-container .result .mini-result .first-content .content1 .paragraph {
+  color: white;
+  margin-top: 10px;
+}
+
+.calculator-container .content-container .result-container .result .mini-result .first-content .content1 .paragraph1 {
+  color: #5e7a7d;
+}
+
+.calculator-container .content-container .result-container .result .mini-result .first-content .answer1 {
+  width: 100%;
+}
+
+.calculator-container .content-container .result-container .result .mini-result .first-content #amount {
+  width: 100%;
+  padding: 12px 10px;
+  display: inline-block;
+  background-color: #00494d;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  text-align: right;
+  font-size: 24px;
+  color: #26c0ab;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+.calculator-container .content-container .result-container .result .mini-result .second-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calculator-container .content-container .result-container .result .mini-result .second-content .content1 {
+  width: 100%;
+}
+
+.calculator-container .content-container .result-container .result .mini-result .second-content .content1 .paragraph {
+  color: white;
+  margin-top: 10px;
+}
+
+.calculator-container .content-container .result-container .result .mini-result .second-content .content1 .paragraph1 {
+  color: #5e7a7d;
+}
+
+.calculator-container .content-container .result-container .result .mini-result .second-content .answer1 {
+  width: 100%;
+}
+
+.calculator-container .content-container .result-container .result .mini-result .second-content #total {
+  width: 80%;
+  padding: 12px 10px;
+  display: inline-block;
+  background-color: #00494d;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-size: 24px;
+  color: #26c0ab;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  main {
+    margin-bottom: 30px;
+  }
+  .heading {
+    margin-top: 30px;
+  }
+  .result {
+    gap: 20px;
+  }
+  .mini-button-container {
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
