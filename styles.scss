@@ -385,7 +385,7 @@ main {
               border-radius: 4px;
               text-align: right;
               font-size: 24px;
-              color: $Lightgrayishcyan;
+              color: $primarycyan;
               font-weight: $fontweight2;
               font-family: "Space Mono", monospace;
               box-sizing: border-box;
@@ -421,7 +421,7 @@ main {
               border: 2px solid transparent;
               border-radius: 4px;
               font-size: 24px;
-              color: $Lightgrayishcyan;
+              color: $primarycyan;
               text-align: right;
               font-weight: $fontweight2;
               font-family: "Space Mono", monospace;
@@ -453,7 +453,7 @@ main {
     gap: 20px;
   }
 
-  .mini-button-container {
-    width: 40%;
+  .button-container {
+    gap: 40px;
   }
 }
