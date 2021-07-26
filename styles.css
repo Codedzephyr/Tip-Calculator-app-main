@@ -36,7 +36,7 @@ main {
 }
 
 .calculator-container {
-  max-width: 80%;
+  min-width: 60%;
   min-height: calc(50vh - 12.8px);
 }
 
@@ -103,7 +103,7 @@ main {
 .calculator-container .content-container .calculation-container .calculation #calculation-form .form-container .person {
   position: absolute;
   left: 14px;
-  top: 22px;
+  top: 26px;
 }
 
 .calculator-container .content-container .calculation-container .calculation #calculation-form .form-container #bill-input {
@@ -149,7 +149,7 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 10px;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .button-five {
@@ -163,8 +163,8 @@ main {
   padding: 5px;
   font-family: "Space Mono", monospace;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 80px;
-          flex: 1 1 80px;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
   height: 40px;
   cursor: pointer;
   border-radius: 4px;
@@ -189,8 +189,8 @@ main {
   font-size: 16px;
   padding: 5px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 80px;
-          flex: 1 1 80px;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
   height: 40px;
   cursor: pointer;
   border-radius: 4px;
@@ -215,8 +215,8 @@ main {
   font-size: 16px;
   padding: 5px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 80px;
-          flex: 1 1 80px;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
   height: 40px;
   cursor: pointer;
   border-radius: 4px;
@@ -241,8 +241,8 @@ main {
   font-size: 16px;
   padding: 5px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 80px;
-          flex: 1 1 80px;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
   height: 40px;
   cursor: pointer;
   border-radius: 4px;
@@ -267,8 +267,8 @@ main {
   padding: 5px;
   font-family: "Space Mono", monospace;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 80px;
-          flex: 1 1 80px;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
   height: 40px;
   cursor: pointer;
   border-radius: 4px;
@@ -295,7 +295,7 @@ main {
   font-size: 24px;
   font-weight: 700;
   font-family: "Space Mono", monospace;
-  width: 80px;
+  width: 100px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -387,11 +387,11 @@ main {
 }
 
 .calculator-container .content-container .result-container .result {
-  width: 85%;
+  width: 90%;
   min-height: calc(55vh - 12.8px);
   background-color: #00494d;
   border-radius: 30px;
-  margin: 25px;
+  margin: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
