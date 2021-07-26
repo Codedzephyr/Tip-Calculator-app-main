@@ -163,8 +163,8 @@ main {
   padding: 5px;
   font-family: "Space Mono", monospace;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 80px;
-          flex: 1 0 80px;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
   height: 40px;
   cursor: pointer;
   border-radius: 4px;
@@ -189,8 +189,8 @@ main {
   font-size: 16px;
   padding: 5px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 80px;
-          flex: 1 0 80px;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
   height: 40px;
   cursor: pointer;
   border-radius: 4px;
@@ -215,8 +215,8 @@ main {
   font-size: 16px;
   padding: 5px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 80px;
-          flex: 1 0 80px;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
   height: 40px;
   cursor: pointer;
   border-radius: 4px;
@@ -241,8 +241,8 @@ main {
   font-size: 16px;
   padding: 5px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 80px;
-          flex: 1 0 80px;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
   height: 40px;
   cursor: pointer;
   border-radius: 4px;
@@ -267,8 +267,8 @@ main {
   padding: 5px;
   font-family: "Space Mono", monospace;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 80px;
-          flex: 1 0 80px;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
   height: 40px;
   cursor: pointer;
   border-radius: 4px;
@@ -295,13 +295,13 @@ main {
   font-size: 24px;
   font-weight: 700;
   font-family: "Space Mono", monospace;
-  width: 80px;
+  width: 100px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   font-size: 20px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
 }
 
 .calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .custom:focus {
