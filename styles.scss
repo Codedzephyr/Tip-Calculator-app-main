@@ -87,7 +87,7 @@ main {
             .person {
               position: absolute;
               left: 14px;
-              top: 27px;
+              top: 22px;
             }
 
             #bill-input {
@@ -129,7 +129,7 @@ main {
               display: flex;
               flex-wrap: wrap;
               margin-top: 10px;
-              gap: 25px;
+              gap: 1.5rem;
 
               .button-five {
                 background-color: $Verydarkcyan;

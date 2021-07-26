@@ -103,7 +103,7 @@ main {
 .calculator-container .content-container .calculation-container .calculation #calculation-form .form-container .person {
   position: absolute;
   left: 14px;
-  top: 27px;
+  top: 22px;
 }
 
 .calculator-container .content-container .calculation-container .calculation #calculation-form .form-container #bill-input {
@@ -149,7 +149,7 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 10px;
-  gap: 25px;
+  gap: 1.5rem;
 }
 
 .calculator-container .content-container .calculation-container .calculation #calculation-form .select-tip-container .button-container .button-five {
