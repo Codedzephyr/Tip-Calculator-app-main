@@ -150,6 +150,10 @@ main {
                 background-color: $primarycyan;
               }
 
+              .button-five:focus {
+                background-color: $primarycyan;
+              }
+
               .button-ten {
                 background-color: $Verydarkcyan;
                 border: none;
@@ -167,6 +171,10 @@ main {
               }
 
               .button-ten:hover {
+                background-color: $primarycyan;
+              }
+
+              .button-ten:focus {
                 background-color: $primarycyan;
               }
 
@@ -190,6 +198,10 @@ main {
                 background-color: $primarycyan;
               }
 
+              .button-fifteen:focus {
+                background-color: $primarycyan;
+              }
+
               .button-twenty-five {
                 background-color: $Verydarkcyan;
                 border: none;
@@ -209,6 +221,10 @@ main {
               .button-twenty-five:hover {
                 background-color: $primarycyan;
               }
+
+              .button-twenty-five:focus {
+                background-color: $primarycyan;
+              }
               .button-fifty {
                 background-color: $Verydarkcyan;
                 border: none;
@@ -226,6 +242,10 @@ main {
               }
 
               .button-fifty:hover {
+                background-color: $primarycyan;
+              }
+
+              .button-fifty:focus {
                 background-color: $primarycyan;
               }
 
@@ -394,7 +414,7 @@ main {
             }
 
             #total {
-              width: 80%;
+              width: 100%;
               padding: 12px 10px;
               display: inline-block;
               background-color: $Verydarkcyan;
@@ -402,6 +422,7 @@ main {
               border-radius: 4px;
               font-size: 24px;
               color: $primarycyan;
+              text-align: right;
               font-weight: $fontweight2;
               font-family: "Space Mono", monospace;
               box-sizing: border-box;
