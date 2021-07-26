@@ -42,7 +42,7 @@ main {
 }
 
 .calculator-container {
-  min-width: 60%;
+  max-width: 80%;
   min-height: calc(50vh - 12.8px);
 
   .image-container {
@@ -129,7 +129,7 @@ main {
               display: flex;
               flex-wrap: wrap;
               margin-top: 10px;
-              gap: 1.5rem;
+              gap: 1rem;
 
               .button-five {
                 background-color: $Verydarkcyan;
@@ -141,7 +141,7 @@ main {
                 font-size: 16px;
                 padding: 5px;
                 font-family: "Space Mono", monospace;
-                flex: 1 1 100px;
+                flex: 1 1 80px;
                 height: 40px;
                 cursor: pointer;
                 border-radius: 4px;
@@ -164,7 +164,7 @@ main {
                 font-family: "Space Mono", monospace;
                 font-size: 16px;
                 padding: 5px;
-                flex: 1 1 100px;
+                flex: 1 1 80px;
                 height: 40px;
                 cursor: pointer;
                 border-radius: 4px;
@@ -188,7 +188,7 @@ main {
                 display: inline-block;
                 font-size: 16px;
                 padding: 5px;
-                flex: 1 1 100px;
+                flex: 1 1 80px;
                 height: 40px;
                 cursor: pointer;
                 border-radius: 4px;
@@ -212,7 +212,7 @@ main {
                 display: inline-block;
                 font-size: 16px;
                 padding: 5px;
-                flex: 1 1 100px;
+                flex: 1 1 80px;
                 height: 40px;
                 cursor: pointer;
                 border-radius: 4px;
@@ -235,7 +235,7 @@ main {
                 font-size: 16px;
                 padding: 5px;
                 font-family: "Space Mono", monospace;
-                flex: 1 1 100px;
+                flex: 1 1 80px;
                 height: 40px;
                 cursor: pointer;
                 border-radius: 4px;
@@ -261,7 +261,7 @@ main {
                 font-size: 24px;
                 font-weight: $fontweight2;
                 font-family: "Space Mono", monospace;
-                width: 100px;
+                width: 80px;
                 flex-grow: 1;
                 font-size: 20px;
                 flex-shrink: 1;
