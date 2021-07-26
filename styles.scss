@@ -87,7 +87,7 @@ main {
             .person {
               position: absolute;
               left: 14px;
-              top: 20px;
+              top: 27px;
             }
 
             #bill-input {
@@ -141,7 +141,7 @@ main {
                 font-size: 16px;
                 padding: 5px;
                 font-family: "Space Mono", monospace;
-                flex: 1 0 100px;
+                flex: 1 0 80px;
                 height: 40px;
                 cursor: pointer;
                 border-radius: 4px;
@@ -164,7 +164,7 @@ main {
                 font-family: "Space Mono", monospace;
                 font-size: 16px;
                 padding: 5px;
-                flex: 1 0 100px;
+                flex: 1 0 80px;
                 height: 40px;
                 cursor: pointer;
                 border-radius: 4px;
@@ -188,7 +188,7 @@ main {
                 display: inline-block;
                 font-size: 16px;
                 padding: 5px;
-                flex: 1 0 100px;
+                flex: 1 0 80px;
                 height: 40px;
                 cursor: pointer;
                 border-radius: 4px;
@@ -212,7 +212,7 @@ main {
                 display: inline-block;
                 font-size: 16px;
                 padding: 5px;
-                flex: 1 0 100px;
+                flex: 1 0 80px;
                 height: 40px;
                 cursor: pointer;
                 border-radius: 4px;
@@ -235,7 +235,7 @@ main {
                 font-size: 16px;
                 padding: 5px;
                 font-family: "Space Mono", monospace;
-                flex: 1 0 100px;
+                flex: 1 0 80px;
                 height: 40px;
                 cursor: pointer;
                 border-radius: 4px;
@@ -261,7 +261,7 @@ main {
                 font-size: 24px;
                 font-weight: $fontweight2;
                 font-family: "Space Mono", monospace;
-                width: 100px;
+                width: 80px;
                 flex-grow: 1;
                 font-size: 20px;
                 flex-shrink: 0;
@@ -302,7 +302,7 @@ main {
               .person {
                 position: absolute;
                 left: 14px;
-                top: 12px;
+                top: 15px;
               }
 
               #people-input {
