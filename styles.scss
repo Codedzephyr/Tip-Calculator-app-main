@@ -42,7 +42,7 @@ main {
 }
 
 .calculator-container {
-  min-width: 60%;
+  min-width: 67%;
   min-height: calc(50vh - 12.8px);
 
   .image-container {
@@ -427,6 +427,28 @@ main {
               font-family: "Space Mono", monospace;
               box-sizing: border-box;
               outline: none;
+            }
+          }
+
+          .reset-container {
+            position: relative;
+            margin: 30px 0px;
+            .reset {
+              background-color: $primarycyan;
+              border: none;
+              position: absolute;
+              right: 0px;
+              color: $White;
+              text-align: center;
+              font-family: "Space Mono", monospace;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              padding: 5px;
+              width: 100px;
+              height: 40px;
+              cursor: pointer;
+              border-radius: 4px;
             }
           }
         }

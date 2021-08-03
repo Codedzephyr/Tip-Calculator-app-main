@@ -2,6 +2,7 @@ const ErrorMessage = document.getElementById("displayed");
 const ErrorMessage1 = document.getElementById("InputATip");
 const ErrorMessage2 = document.getElementById("input-value");
 const Details = document.getElementById("details1");
+const ResetButton = document.getElementById("resett");
 
 // Performing a check for input values
 function PerformComparison() {
@@ -318,4 +319,11 @@ function getValue5() {
       document.getElementById("total").value = "$" + TotalAmountFinal;
     }
   }
+}
+
+function reset() {
+  document.getElementById("total").value = " ";
+  document.getElementById("amount").value = " ";
+  document.getElementById("bill-input").value = " ";
+  document.getElementById("people-input").value = "";
 }
